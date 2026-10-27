@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+:root{
+    --main: rgb(158, 0, 0);
+    --main_light: rgb(201, 142, 142);
+    --main_dark: rgb(87, 16, 16);
+    --sub: #222;
+    --bg: #fff;
+    --bg2: #f5f5f5;
+    --text: #666;
+    --line : rgba(0, 0, 0, 0.4)
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, ol, li{
+    list-style: none;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+    object-fit: cover;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: var(--main);
+}
+
+body{
+    background: var(--bg);
+    color: var(--text);
+}
+
+/* layout */
+
+header{
+    width: 1340px;
+    height: 100px;
+    margin: 0 auto;
+    background: var(--bg2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gnb{
+    display: flex;
+    gap: 5px;
+}
+
+.gnb > li > a{
+    display: block;
+    padding: 10px;
+    width: 170px;
+    background: var(--main);
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+
+.gnb > li{
+    position: relative;
+}
+
+.gnb > li > a:hover{
+    background: var(--main_dark);
+}
+
+.submenu{
+    display: none;
+    
+    position: absolute;
+    
+    top: 44px;
+    left: 0;
+    z-index: 30;
+    background: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+.submenu > li > a{
+    display: block;
+    padding: 7px;
+    border: 1px solid var(--line);
+}
+
+.submenu > li > a:hover{
+    background: var(--main_light);
+}
+
+main{
+    /* none */
+}
+
+.slider{
+    width: 100%;
+    height: 350px;
+    background: skyblue;
+}
+
+.slide_wrap{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 20;
+}
+
+.slide_item{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slide_item p{
+    font-size: 2.4vw;
+
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    background: var(--main_dark);
+    border-radius: 30px;
+    font-weight: bold;
+    color: #fff;
+
+    width: 60%;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.c_container{
+    width: 1340px;
+    margin: 0 auto;
+}
+
+.link{
+    width: 100%;
+    height: 90px;
+    background: pink;
+    margin-top: -90px;
+    position: relative;
+    z-index: 25;
+}
+
+.banner{
+    height: 200px;
+    background: #00ff95;
+}
+
+.board{
+    height: 350px;
+    background: #4c00ff;
+}
+
+footer{
+    width: 1340px;
+    height: 120px;
+    margin: 0 auto;
+    background: var(--sub);
+}
