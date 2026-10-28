@@ -171,7 +171,6 @@ main{
 
 .tab{
     width: 50%;
-    background: pink;
 }
 
 .tab_menu{
@@ -194,10 +193,13 @@ main{
 .tab_menu a:hover{
     background: var(--main_light);
 }
+.tab_menu a.on{
+    background: var(--main);
+    color: #fff;
+}
 
 .notice_list{
     margin-top: 15px;
-    display: none;
 }
 
 .notice_list li a{
@@ -208,7 +210,6 @@ main{
 }
 
 .gallery_list{
-    /* display: none; */
     margin-top: 20px;
     display: flex;
     justify-content: center;
