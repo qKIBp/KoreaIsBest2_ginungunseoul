@@ -229,3 +229,38 @@ footer{
     margin: 0 auto;
     background: var(--sub);
 }
+
+.popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 600px;
+    min-height: 300px;
+    padding: 30px;
+    border-radius: 30px;
+    background: #fff;
+    border: 3px solid #000;
+    z-index: 999;
+    display: none;
+}
+
+.popup p{
+    margin-top: 20px;
+    line-height: 2;
+}
+
+.close_popup{
+    display: block;
+    margin: 20px auto;
+    width: 150px;
+    height: 45px;
+    background: var(--main);
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}

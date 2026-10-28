@@ -45,3 +45,16 @@ $('.tab_menu a').on('click', function(e){
     $('.tab_menu a').eq(tabIndex).addClass('on');
     $('.tab_menu a').eq(!tabIndex).removeClass('on');
 })
+
+
+// popup
+// $('.open_popup').on('click', function(){})
+$('.open_popup').on('click', function(e){
+    e.preventDefault();
+    $('.popup').fadeIn();
+})
+
+$('.close_popup').on('click', function(e){
+    e.preventDefault();
+    $('.popup').fadeOut();
+})
