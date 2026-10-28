@@ -34,7 +34,7 @@ a{
 }
 
 a:hover{
-    text-decoration: underline;
+    text-decoration: none;
     color: var(--main);
 }
 
@@ -165,7 +165,61 @@ main{
 
 .board{
     height: 350px;
-    background: #4c00ff;
+    /* background: #4c00ff; */
+    padding: 30px;
+}
+
+.tab{
+    width: 50%;
+    background: pink;
+}
+
+.tab_menu{
+    display: flex;
+    gap: 10px;
+}
+
+.tab_menu a{
+    display: block;
+    width: 150px;
+    padding: 10px;
+    background: #fff;
+    text-align: center;
+    border-radius: 30px;
+    border: 1px solid var(--main);
+    font-weight: bold;
+    color: var(--main);
+}
+
+.tab_menu a:hover{
+    background: var(--main_light);
+}
+
+.notice_list{
+    margin-top: 15px;
+    display: none;
+}
+
+.notice_list li a{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid var(--line);
+}
+
+.gallery_list{
+    /* display: none; */
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery_list li a img{
+    display: block;
+    width: 180px;
+    height: 180px;
+    border: 1px solid #000;
 }
 
 footer{
