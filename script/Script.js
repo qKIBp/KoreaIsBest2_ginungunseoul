@@ -51,10 +51,12 @@ $('.tab_menu a').on('click', function(e){
 // $('.open_popup').on('click', function(){})
 $('.open_popup').on('click', function(e){
     e.preventDefault();
-    $('.popup').fadeIn();
+    // $('.popup').fadeIn();
+    $('.popup').addClass('active')
 })
 
 $('.close_popup').on('click', function(e){
     e.preventDefault();
-    $('.popup').fadeOut();
+    // $('.popup').fadeOut();
+    $('.popup').removeClass('active')
 })
