@@ -301,8 +301,8 @@ footer{
 .popup.active{
     opacity: 1;
     top: 50%;
-    pointer-events: all;
-    user-select: all;
+    pointer-events: auto;
+    user-select: auto;
 }
 
 .popup p{
